@@ -4,7 +4,13 @@ const cors = require('cors');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+// Permitir qualquer origem (resolve o CORS)
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type']
+}));
 
 // ============================================
 // ===== MAPEAMENTO DE LOJAS (ATÉ 10) =========
