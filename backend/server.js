@@ -17,7 +17,7 @@ app.use(cors({
 // ============================================
 const chaves = {
     'https://painel40grauslafa.vercel.app': process.env.LOJA1,
-    'https://loja2.vercel.app': process.env.LOJA2,
+    'https://painelnossacozinhalafa.vercel.app': process.env.LOJA2,
     'https://loja3.vercel.app': process.env.LOJA3,
     'https://loja4.vercel.app': process.env.LOJA4,
     'https://loja5.vercel.app': process.env.LOJA5,
